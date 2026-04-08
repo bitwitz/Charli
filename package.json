@@ -1,0 +1,25 @@
+{
+  "name": "charli-trading-ai",
+  "version": "1.0.0",
+  "description": "Multi-Agent AI Trading Council (DeepSeek + Gemini Flash)",
+  "main": "src/bootstrap.js",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "pm2 start src/bootstrap.js --name charli",
+    "dev": "node src/bootstrap.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "ccxt": "^4.2.0",
+    "@google/generative-ai": "^0.1.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0",
+    "technicalindicators": "^3.1.0",
+    "ws": "^8.14.0",
+    "winston": "^3.11.0",
+    "telegraf": "^4.15.0",
+    "@supabase/supabase-js": "^2.39.0"
+  }
+}
